@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Black Jack game</title>
+    <link href="blackjack.css" rel="stylesheet">
+    <link rel="web icon" href="icon.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <h1>Blackjack</h1>
+    <div class="instructions">
+    <p><strong>Goal:</strong> Get as close to 21 as possible without going over.</p>
+  <h2>Game Rules</h2>
+  <ul>
+   
+  <li>Enter your name, age (18+), and starting chips</li>
+  <li>Before each round, enter your bet amount</li>
+  <li>Click START GAME to begin a new round</li>
+  <li>Your bet is deducted at the start of the round</li>
+  <li>You will receive two cards initially</li>
+  <li>Each card adds to your total sum</li>
+  <li>Ace counts as 11 or 1 automatically to prevent bust</li>
+  <li>Click NEW CARD to draw another card</li>
+  <li>If your sum exceeds 21, you lose your bet</li>
+  <li>If your sum becomes exactly 21, you win and get double your bet</li>
+  <li>Finish the current round before starting a new one</li>
+  <li>The game ends when you run out of chips</li>
+</ul>
+    
+</div>
+
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+
+    <div class="player-input">
+      <input type="text" id="name-input" placeholder="Enter your name">
+      <input type="number" id="age-input" placeholder="Enter your age">
+      <input type="number" id="chips-input" placeholder="Enter your chips">
+      
+      <div class="player-setup">
+      
+      <button onclick="setPlayer()">SET PLAYER</button>
+      </div>
+      
+    </div>
+
+    <p id="player-el"></p>
+
+    <div class="buttons">
+    <input type="number" id="bet-input" placeholder="Enter bet">
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
+    
+    </div>
+    <script src="blackjack.js"></script>
+  </body>
+</html>
