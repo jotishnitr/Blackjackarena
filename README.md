@@ -5,7 +5,7 @@ This project simulates core Blackjack mechanics with betting, chip management, a
 
 ## 🚀 Live Demo
 
-https://blackjackarena.netlify.app/
+https://jotishnitr.github.io/Blackjackarena/
 
 
 ## 🎯 Features
